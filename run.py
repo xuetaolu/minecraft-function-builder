@@ -4,7 +4,10 @@ import noteMsg
 import util
 import random
 
-midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
+# 在这里设置传入的mid路径
+# midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
+midifile = r'./mid/S1.mid'
+
 
 # 常用指令暴露出来
 from util import setblock
@@ -25,8 +28,7 @@ seq = sequence.Seq()
 
 if __name__ == '__main__':
   msgList = noteMsg.MsgList()
-  msgList.load(f'./mid/S1.mid', 40.0)
-  # msgList.load(midifile, 60.0)
+  msgList.load(midifile, 60.0)
   for item in msgList.msgList:
     tick = item.tick
     for msg in item.msgs.msgs:
