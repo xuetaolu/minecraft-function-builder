@@ -6,9 +6,10 @@ import random
 
 # 在这里设置传入的mid路径
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
-midifile = r'./mid/彩虹猫.mid'
+midifile = r'./mid/彩虹猫-Part.mid'
 tickRate = 28.0
 noteRoot = 63
+lineWidth= 8
 
 
 # 常用指令暴露出来
@@ -32,7 +33,7 @@ def getNoteBlocksCmd(tick, noteList):
   _x,_y,_z = 0,4,0
 
   _length = 16
-  _width  = 8
+  _width  = lineWidth
 
   _div = tick // _length
   _mod = tick % (_length*2)
@@ -45,7 +46,9 @@ def getNoteBlocksCmd(tick, noteList):
   dLen = (_width//2) * 2
   dx = [0 for i in range(dLen)]
   dy = [0 for i in range(dLen)]
-  dz = [0] + [-i for i in range(1,dLen+1)] + [i for i in range(1,dLen+1)]
+  dz = [0] + [-i for i in range(1,_width//2+1)] + [i for i in range(1,_width//2+1)]
+  dz.sort(key=lambda a: abs(a))
+  print(dz, _width//2)
 
   cmds = []
   if len(noteList) > 0:
@@ -56,8 +59,8 @@ def getNoteBlocksCmd(tick, noteList):
       else:
         x,y,z = _x+dx[i], _y+dy[i], _z+dz[i]
         cmds.append(NB.toNoteBlockCmd(note, x,y,z, root=noteRoot))
-        x,y,z = x,y+1,z
-        cmds.append(setblock(x,y,z, 'redstone_wire', 0))
+        # x,y,z = x,y+1,z
+        # cmds.append(setblock(x,y,z, 'redstone_wire', 0))
   else:
     cmds.append(setblock(_x,_y,_z,'grass', 1))
   
