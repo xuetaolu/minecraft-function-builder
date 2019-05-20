@@ -8,7 +8,7 @@ import random
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
 midifile = r'./mid/彩虹猫-Part.mid'
 tickRate = 28.0
-noteRoot = 63
+noteRoot = 66
 lineWidth= 8
 
 
