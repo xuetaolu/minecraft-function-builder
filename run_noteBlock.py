@@ -8,7 +8,7 @@ import random
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
 midifile = r'./mid/彩虹猫.mid'
 tickRate = 28.0
-noteRoot = 66
+noteRoot = 63
 
 
 # 常用指令暴露出来
@@ -32,7 +32,7 @@ def getNoteBlocksCmd(tick, noteList):
   _x,_y,_z = 0,4,0
 
   _length = 16
-  _width  = 4
+  _width  = 8
 
   _div = tick // _length
   _mod = tick % (_length*2)
@@ -41,18 +41,23 @@ def getNoteBlocksCmd(tick, noteList):
 
   _x += (_mod if _mod < _length else 2*_length - _mod -1)*2
 
-  dx = [0,0,0]
-  dy = [0,0,0]
-  dz = [0,1,-1]
+
+  dLen = (_width//2) * 2
+  dx = [0 for i in range(dLen)]
+  dy = [0 for i in range(dLen)]
+  dz = [0] + [-i for i in range(1,dLen+1)] + [i for i in range(1,dLen+1)]
+
   cmds = []
   if len(noteList) > 0:
     for i,note in enumerate(noteList):
-      if i >= 6:
-        print(f'in getNoteBlocksCmd i > 3')
+      if i >= dLen:
+        print(f'in getNoteBlocksCmd i > {dLen}')
         break
       else:
         x,y,z = _x+dx[i], _y+dy[i], _z+dz[i]
         cmds.append(NB.toNoteBlockCmd(note, x,y,z, root=noteRoot))
+        x,y,z = x,y+1,z
+        cmds.append(setblock(x,y,z, 'redstone_wire', 0))
   else:
     cmds.append(setblock(_x,_y,_z,'grass', 1))
   
