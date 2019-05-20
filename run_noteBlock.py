@@ -8,6 +8,7 @@ import random
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
 midifile = r'./mid/彩虹猫.mid'
 tickRate = 28.0
+noteRoot = 66
 
 
 # 常用指令暴露出来
@@ -51,7 +52,7 @@ def getNoteBlocksCmd(tick, noteList):
         break
       else:
         x,y,z = _x+dx[i], _y+dy[i], _z+dz[i]
-        cmds.append(NB.toNoteBlockCmd(note, x,y,z, root=63))
+        cmds.append(NB.toNoteBlockCmd(note, x,y,z, root=noteRoot))
   else:
     cmds.append(setblock(_x,_y,_z,'grass', 1))
   
