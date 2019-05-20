@@ -6,7 +6,7 @@ import random
 
 # 在这里设置传入的mid路径
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
-midifile = r'./mid/Alan_Walker_-_The_Spectre.mid'
+midifile = r'./mid/S1.mid'
 tickRate = 60.0
 
 

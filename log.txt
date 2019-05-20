@@ -1,0 +1,1284 @@
+tick: 0
+  setblock 0 4 0 noteblock 0 destroy {note:15}
+setblock -1 4 0 unpowered_repeater 1 replace
+tick: 1
+  setblock 2 4 0 grass 1 replace
+setblock 1 4 0 unpowered_repeater 1 replace
+tick: 2
+  setblock 4 4 0 grass 1 replace
+setblock 3 4 0 unpowered_repeater 1 replace
+tick: 3
+  setblock 6 4 0 noteblock 0 destroy {note:17}
+setblock 5 4 0 unpowered_repeater 1 replace
+tick: 4
+  setblock 8 4 0 grass 1 replace
+setblock 7 4 0 unpowered_repeater 1 replace
+tick: 5
+  setblock 10 4 0 grass 1 replace
+setblock 9 4 0 unpowered_repeater 1 replace
+tick: 6
+  setblock 12 4 0 noteblock 0 destroy {note:11}
+setblock 11 4 0 unpowered_repeater 1 replace
+tick: 7
+  setblock 14 4 0 noteblock 0 destroy {note:12}
+setblock 13 4 0 unpowered_repeater 1 replace
+tick: 8
+  setblock 16 4 0 grass 1 replace
+setblock 15 4 0 unpowered_repeater 1 replace
+tick: 9
+  setblock 18 4 0 grass 1 replace
+setblock 17 4 0 unpowered_repeater 1 replace
+tick: 10
+  setblock 20 4 0 noteblock 0 destroy {note:10}
+setblock 19 4 0 unpowered_repeater 1 replace
+tick: 11
+  setblock 22 4 0 grass 1 replace
+setblock 21 4 0 unpowered_repeater 1 replace
+tick: 12
+  setblock 24 4 0 noteblock 0 destroy {note:11}
+setblock 23 4 0 unpowered_repeater 1 replace
+tick: 13
+  setblock 26 4 0 noteblock 0 destroy {note:10}
+setblock 25 4 0 unpowered_repeater 1 replace
+tick: 14
+  setblock 28 4 0 grass 1 replace
+setblock 27 4 0 unpowered_repeater 1 replace
+tick: 15
+  setblock 30 4 0 noteblock 0 destroy {note:8}
+setblock 29 4 0 unpowered_repeater 1 replace
+tick: 16
+  setblock 30 4 4 grass 1 replace
+setblock 31 4 4 unpowered_repeater 3 replace
+setblock 31 4 0 redstone_wire 1 replace
+setblock 32 4 0 redstone_wire 0 replace
+setblock 32 4 1 redstone_wire 0 replace
+setblock 32 4 2 redstone_wire 0 replace
+setblock 32 4 3 redstone_wire 0 replace
+setblock 32 4 4 redstone_wire 0 replace
+tick: 17
+  setblock 28 4 4 grass 1 replace
+setblock 29 4 4 unpowered_repeater 3 replace
+tick: 18
+  setblock 26 4 4 noteblock 0 destroy {note:8}
+setblock 27 4 4 unpowered_repeater 3 replace
+tick: 19
+  setblock 24 4 4 grass 1 replace
+setblock 25 4 4 unpowered_repeater 3 replace
+tick: 20
+  setblock 22 4 4 grass 1 replace
+setblock 23 4 4 unpowered_repeater 3 replace
+tick: 21
+  setblock 20 4 4 noteblock 0 destroy {note:10}
+setblock 21 4 4 unpowered_repeater 3 replace
+tick: 22
+  setblock 18 4 4 grass 1 replace
+setblock 19 4 4 unpowered_repeater 3 replace
+tick: 23
+  setblock 16 4 4 grass 1 replace
+setblock 17 4 4 unpowered_repeater 3 replace
+tick: 24
+  setblock 14 4 4 noteblock 0 destroy {note:11}
+setblock 15 4 4 unpowered_repeater 3 replace
+tick: 25
+  setblock 12 4 4 grass 1 replace
+setblock 13 4 4 unpowered_repeater 3 replace
+tick: 26
+  setblock 10 4 4 grass 1 replace
+setblock 11 4 4 unpowered_repeater 3 replace
+tick: 27
+  setblock 8 4 4 noteblock 0 destroy {note:11}
+setblock 9 4 4 unpowered_repeater 3 replace
+tick: 28
+  setblock 6 4 4 noteblock 0 destroy {note:10}
+setblock 7 4 4 unpowered_repeater 3 replace
+tick: 29
+  setblock 4 4 4 grass 1 replace
+setblock 5 4 4 unpowered_repeater 3 replace
+tick: 30
+  setblock 2 4 4 noteblock 0 destroy {note:8}
+setblock 3 4 4 unpowered_repeater 3 replace
+tick: 31
+  setblock 0 4 4 noteblock 0 destroy {note:10}
+setblock 1 4 4 unpowered_repeater 3 replace
+tick: 32
+  setblock 0 4 8 grass 1 replace
+setblock -1 4 8 unpowered_repeater 1 replace
+setblock -1 4 4 redstone_wire 3 replace
+setblock -2 4 4 redstone_wire 0 replace
+setblock -2 4 5 redstone_wire 0 replace
+setblock -2 4 6 redstone_wire 0 replace
+setblock -2 4 7 redstone_wire 0 replace
+setblock -2 4 8 redstone_wire 0 replace
+tick: 33
+  setblock 2 4 8 noteblock 0 destroy {note:12}
+setblock 1 4 8 unpowered_repeater 1 replace
+tick: 34
+  setblock 4 4 8 noteblock 0 destroy {note:15}
+setblock 3 4 8 unpowered_repeater 1 replace
+tick: 35
+  setblock 6 4 8 grass 1 replace
+setblock 5 4 8 unpowered_repeater 1 replace
+tick: 36
+  setblock 8 4 8 noteblock 0 destroy {note:17}
+setblock 7 4 8 unpowered_repeater 1 replace
+tick: 37
+  setblock 10 4 8 noteblock 0 destroy {note:12}
+setblock 9 4 8 unpowered_repeater 1 replace
+tick: 38
+  setblock 12 4 8 grass 1 replace
+setblock 11 4 8 unpowered_repeater 1 replace
+tick: 39
+  setblock 14 4 8 noteblock 0 destroy {note:15}
+setblock 13 4 8 unpowered_repeater 1 replace
+tick: 40
+  setblock 16 4 8 noteblock 0 destroy {note:10}
+setblock 15 4 8 unpowered_repeater 1 replace
+tick: 41
+  setblock 18 4 8 grass 1 replace
+setblock 17 4 8 unpowered_repeater 1 replace
+tick: 42
+  setblock 20 4 8 noteblock 0 destroy {note:12}
+setblock 19 4 8 unpowered_repeater 1 replace
+tick: 43
+  setblock 22 4 8 noteblock 0 destroy {note:8}
+setblock 21 4 8 unpowered_repeater 1 replace
+tick: 44
+  setblock 24 4 8 grass 1 replace
+setblock 23 4 8 unpowered_repeater 1 replace
+tick: 45
+  setblock 26 4 8 noteblock 0 destroy {note:10}
+setblock 25 4 8 unpowered_repeater 1 replace
+tick: 46
+  setblock 28 4 8 noteblock 0 destroy {note:8}
+setblock 27 4 8 unpowered_repeater 1 replace
+tick: 47
+  setblock 30 4 8 grass 1 replace
+setblock 29 4 8 unpowered_repeater 1 replace
+tick: 48
+  setblock 30 4 12 noteblock 0 destroy {note:12}
+setblock 31 4 12 unpowered_repeater 3 replace
+setblock 31 4 8 redstone_wire 1 replace
+setblock 32 4 8 redstone_wire 0 replace
+setblock 32 4 9 redstone_wire 0 replace
+setblock 32 4 10 redstone_wire 0 replace
+setblock 32 4 11 redstone_wire 0 replace
+setblock 32 4 12 redstone_wire 0 replace
+tick: 49
+  setblock 28 4 12 grass 1 replace
+setblock 29 4 12 unpowered_repeater 3 replace
+tick: 50
+  setblock 26 4 12 grass 1 replace
+setblock 27 4 12 unpowered_repeater 3 replace
+tick: 51
+  setblock 24 4 12 noteblock 0 destroy {note:15}
+setblock 25 4 12 unpowered_repeater 3 replace
+tick: 52
+  setblock 22 4 12 grass 1 replace
+setblock 23 4 12 unpowered_repeater 3 replace
+tick: 53
+  setblock 20 4 12 grass 1 replace
+setblock 21 4 12 unpowered_repeater 3 replace
+tick: 54
+  setblock 18 4 12 noteblock 0 destroy {note:17}
+setblock 19 4 12 unpowered_repeater 3 replace
+tick: 55
+  setblock 16 4 12 noteblock 0 destroy {note:12}
+setblock 17 4 12 unpowered_repeater 3 replace
+tick: 56
+  setblock 14 4 12 grass 1 replace
+setblock 15 4 12 unpowered_repeater 3 replace
+tick: 57
+  setblock 12 4 12 noteblock 0 destroy {note:15}
+setblock 13 4 12 unpowered_repeater 3 replace
+tick: 58
+  setblock 10 4 12 noteblock 0 destroy {note:10}
+setblock 11 4 12 unpowered_repeater 3 replace
+tick: 59
+  setblock 8 4 12 grass 1 replace
+setblock 9 4 12 unpowered_repeater 3 replace
+tick: 60
+  setblock 6 4 12 noteblock 0 destroy {note:12}
+setblock 7 4 12 unpowered_repeater 3 replace
+tick: 61
+  setblock 4 4 12 noteblock 0 destroy {note:8}
+setblock 5 4 12 unpowered_repeater 3 replace
+tick: 62
+  setblock 2 4 12 grass 1 replace
+setblock 3 4 12 unpowered_repeater 3 replace
+tick: 63
+  setblock 0 4 12 noteblock 0 destroy {note:11}
+setblock 1 4 12 unpowered_repeater 3 replace
+tick: 64
+  setblock 0 4 16 noteblock 0 destroy {note:12}
+setblock -1 4 16 unpowered_repeater 1 replace
+setblock -1 4 12 redstone_wire 3 replace
+setblock -2 4 12 redstone_wire 0 replace
+setblock -2 4 13 redstone_wire 0 replace
+setblock -2 4 14 redstone_wire 0 replace
+setblock -2 4 15 redstone_wire 0 replace
+setblock -2 4 16 redstone_wire 0 replace
+tick: 65
+  setblock 2 4 16 grass 1 replace
+setblock 1 4 16 unpowered_repeater 1 replace
+tick: 66
+  setblock 4 4 16 noteblock 0 destroy {note:11}
+setblock 3 4 16 unpowered_repeater 1 replace
+tick: 67
+  setblock 6 4 16 noteblock 0 destroy {note:10}
+setblock 5 4 16 unpowered_repeater 1 replace
+tick: 68
+  setblock 8 4 16 grass 1 replace
+setblock 7 4 16 unpowered_repeater 1 replace
+tick: 69
+  setblock 10 4 16 noteblock 0 destroy {note:8}
+setblock 9 4 16 unpowered_repeater 1 replace
+tick: 70
+  setblock 12 4 16 noteblock 0 destroy {note:10}
+setblock 11 4 16 unpowered_repeater 1 replace
+tick: 71
+  setblock 14 4 16 grass 1 replace
+setblock 13 4 16 unpowered_repeater 1 replace
+tick: 72
+  setblock 16 4 16 noteblock 0 destroy {note:11}
+setblock 15 4 16 unpowered_repeater 1 replace
+tick: 73
+  setblock 18 4 16 grass 1 replace
+setblock 17 4 16 unpowered_repeater 1 replace
+tick: 74
+  setblock 20 4 16 grass 1 replace
+setblock 19 4 16 unpowered_repeater 1 replace
+tick: 75
+  setblock 22 4 16 noteblock 0 destroy {note:8}
+setblock 21 4 16 unpowered_repeater 1 replace
+tick: 76
+  setblock 24 4 16 noteblock 0 destroy {note:10}
+setblock 23 4 16 unpowered_repeater 1 replace
+tick: 77
+  setblock 26 4 16 grass 1 replace
+setblock 25 4 16 unpowered_repeater 1 replace
+tick: 78
+  setblock 28 4 16 noteblock 0 destroy {note:12}
+setblock 27 4 16 unpowered_repeater 1 replace
+tick: 79
+  setblock 30 4 16 noteblock 0 destroy {note:15}
+setblock 29 4 16 unpowered_repeater 1 replace
+tick: 80
+  setblock 30 4 20 grass 1 replace
+setblock 31 4 20 unpowered_repeater 3 replace
+setblock 31 4 16 redstone_wire 1 replace
+setblock 32 4 16 redstone_wire 0 replace
+setblock 32 4 17 redstone_wire 0 replace
+setblock 32 4 18 redstone_wire 0 replace
+setblock 32 4 19 redstone_wire 0 replace
+setblock 32 4 20 redstone_wire 0 replace
+tick: 81
+  setblock 28 4 20 noteblock 0 destroy {note:11}
+setblock 29 4 20 unpowered_repeater 3 replace
+tick: 82
+  setblock 26 4 20 noteblock 0 destroy {note:12}
+setblock 27 4 20 unpowered_repeater 3 replace
+tick: 83
+  setblock 24 4 20 grass 1 replace
+setblock 25 4 20 unpowered_repeater 3 replace
+tick: 84
+  setblock 22 4 20 noteblock 0 destroy {note:10}
+setblock 23 4 20 unpowered_repeater 3 replace
+tick: 85
+  setblock 20 4 20 noteblock 0 destroy {note:8}
+setblock 21 4 20 unpowered_repeater 3 replace
+tick: 86
+  setblock 18 4 20 grass 1 replace
+setblock 19 4 20 unpowered_repeater 3 replace
+tick: 87
+  setblock 16 4 20 noteblock 0 destroy {note:10}
+setblock 17 4 20 unpowered_repeater 3 replace
+tick: 88
+  setblock 14 4 20 grass 1 replace
+setblock 15 4 20 unpowered_repeater 3 replace
+tick: 89
+  setblock 12 4 20 grass 1 replace
+setblock 13 4 20 unpowered_repeater 3 replace
+tick: 90
+  setblock 10 4 20 noteblock 0 destroy {note:8}
+setblock 11 4 20 unpowered_repeater 3 replace
+tick: 91
+  setblock 8 4 20 grass 1 replace
+setblock 9 4 20 unpowered_repeater 3 replace
+tick: 92
+  setblock 6 4 20 grass 1 replace
+setblock 7 4 20 unpowered_repeater 3 replace
+tick: 93
+  setblock 4 4 20 noteblock 0 destroy {note:10}
+setblock 5 4 20 unpowered_repeater 3 replace
+tick: 94
+  setblock 2 4 20 grass 1 replace
+setblock 3 4 20 unpowered_repeater 3 replace
+tick: 95
+  setblock 0 4 20 grass 1 replace
+setblock 1 4 20 unpowered_repeater 3 replace
+tick: 96
+  setblock 0 4 24 noteblock 0 destroy {note:15}
+setblock -1 4 24 unpowered_repeater 1 replace
+setblock -1 4 20 redstone_wire 3 replace
+setblock -2 4 20 redstone_wire 0 replace
+setblock -2 4 21 redstone_wire 0 replace
+setblock -2 4 22 redstone_wire 0 replace
+setblock -2 4 23 redstone_wire 0 replace
+setblock -2 4 24 redstone_wire 0 replace
+tick: 97
+  setblock 2 4 24 grass 1 replace
+setblock 1 4 24 unpowered_repeater 1 replace
+tick: 98
+  setblock 4 4 24 grass 1 replace
+setblock 3 4 24 unpowered_repeater 1 replace
+tick: 99
+  setblock 6 4 24 noteblock 0 destroy {note:17}
+setblock 5 4 24 unpowered_repeater 1 replace
+tick: 100
+  setblock 8 4 24 grass 1 replace
+setblock 7 4 24 unpowered_repeater 1 replace
+tick: 101
+  setblock 10 4 24 grass 1 replace
+setblock 9 4 24 unpowered_repeater 1 replace
+tick: 102
+  setblock 12 4 24 noteblock 0 destroy {note:11}
+setblock 11 4 24 unpowered_repeater 1 replace
+tick: 103
+  setblock 14 4 24 noteblock 0 destroy {note:12}
+setblock 13 4 24 unpowered_repeater 1 replace
+tick: 104
+  setblock 16 4 24 grass 1 replace
+setblock 15 4 24 unpowered_repeater 1 replace
+tick: 105
+  setblock 18 4 24 grass 1 replace
+setblock 17 4 24 unpowered_repeater 1 replace
+tick: 106
+  setblock 20 4 24 noteblock 0 destroy {note:10}
+setblock 19 4 24 unpowered_repeater 1 replace
+tick: 107
+  setblock 22 4 24 grass 1 replace
+setblock 21 4 24 unpowered_repeater 1 replace
+tick: 108
+  setblock 24 4 24 noteblock 0 destroy {note:11}
+setblock 23 4 24 unpowered_repeater 1 replace
+tick: 109
+  setblock 26 4 24 noteblock 0 destroy {note:10}
+setblock 25 4 24 unpowered_repeater 1 replace
+tick: 110
+  setblock 28 4 24 grass 1 replace
+setblock 27 4 24 unpowered_repeater 1 replace
+tick: 111
+  setblock 30 4 24 noteblock 0 destroy {note:8}
+setblock 29 4 24 unpowered_repeater 1 replace
+tick: 112
+  setblock 30 4 28 grass 1 replace
+setblock 31 4 28 unpowered_repeater 3 replace
+setblock 31 4 24 redstone_wire 1 replace
+setblock 32 4 24 redstone_wire 0 replace
+setblock 32 4 25 redstone_wire 0 replace
+setblock 32 4 26 redstone_wire 0 replace
+setblock 32 4 27 redstone_wire 0 replace
+setblock 32 4 28 redstone_wire 0 replace
+tick: 113
+  setblock 28 4 28 grass 1 replace
+setblock 29 4 28 unpowered_repeater 3 replace
+tick: 114
+  setblock 26 4 28 noteblock 0 destroy {note:8}
+setblock 27 4 28 unpowered_repeater 3 replace
+tick: 115
+  setblock 24 4 28 grass 1 replace
+setblock 25 4 28 unpowered_repeater 3 replace
+tick: 116
+  setblock 22 4 28 grass 1 replace
+setblock 23 4 28 unpowered_repeater 3 replace
+tick: 117
+  setblock 20 4 28 noteblock 0 destroy {note:10}
+setblock 21 4 28 unpowered_repeater 3 replace
+tick: 118
+  setblock 18 4 28 grass 1 replace
+setblock 19 4 28 unpowered_repeater 3 replace
+tick: 119
+  setblock 16 4 28 grass 1 replace
+setblock 17 4 28 unpowered_repeater 3 replace
+tick: 120
+  setblock 14 4 28 noteblock 0 destroy {note:11}
+setblock 15 4 28 unpowered_repeater 3 replace
+tick: 121
+  setblock 12 4 28 grass 1 replace
+setblock 13 4 28 unpowered_repeater 3 replace
+tick: 122
+  setblock 10 4 28 grass 1 replace
+setblock 11 4 28 unpowered_repeater 3 replace
+tick: 123
+  setblock 8 4 28 noteblock 0 destroy {note:11}
+setblock 9 4 28 unpowered_repeater 3 replace
+tick: 124
+  setblock 6 4 28 noteblock 0 destroy {note:10}
+setblock 7 4 28 unpowered_repeater 3 replace
+tick: 125
+  setblock 4 4 28 grass 1 replace
+setblock 5 4 28 unpowered_repeater 3 replace
+tick: 126
+  setblock 2 4 28 noteblock 0 destroy {note:8}
+setblock 3 4 28 unpowered_repeater 3 replace
+tick: 127
+  setblock 0 4 28 noteblock 0 destroy {note:10}
+setblock 1 4 28 unpowered_repeater 3 replace
+tick: 128
+  setblock 0 4 32 grass 1 replace
+setblock -1 4 32 unpowered_repeater 1 replace
+setblock -1 4 28 redstone_wire 3 replace
+setblock -2 4 28 redstone_wire 0 replace
+setblock -2 4 29 redstone_wire 0 replace
+setblock -2 4 30 redstone_wire 0 replace
+setblock -2 4 31 redstone_wire 0 replace
+setblock -2 4 32 redstone_wire 0 replace
+tick: 129
+  setblock 2 4 32 noteblock 0 destroy {note:12}
+setblock 1 4 32 unpowered_repeater 1 replace
+tick: 130
+  setblock 4 4 32 noteblock 0 destroy {note:15}
+setblock 3 4 32 unpowered_repeater 1 replace
+tick: 131
+  setblock 6 4 32 grass 1 replace
+setblock 5 4 32 unpowered_repeater 1 replace
+tick: 132
+  setblock 8 4 32 noteblock 0 destroy {note:17}
+setblock 7 4 32 unpowered_repeater 1 replace
+tick: 133
+  setblock 10 4 32 noteblock 0 destroy {note:12}
+setblock 9 4 32 unpowered_repeater 1 replace
+tick: 134
+  setblock 12 4 32 grass 1 replace
+setblock 11 4 32 unpowered_repeater 1 replace
+tick: 135
+  setblock 14 4 32 noteblock 0 destroy {note:15}
+setblock 13 4 32 unpowered_repeater 1 replace
+tick: 136
+  setblock 16 4 32 noteblock 0 destroy {note:10}
+setblock 15 4 32 unpowered_repeater 1 replace
+tick: 137
+  setblock 18 4 32 grass 1 replace
+setblock 17 4 32 unpowered_repeater 1 replace
+tick: 138
+  setblock 20 4 32 noteblock 0 destroy {note:12}
+setblock 19 4 32 unpowered_repeater 1 replace
+tick: 139
+  setblock 22 4 32 noteblock 0 destroy {note:8}
+setblock 21 4 32 unpowered_repeater 1 replace
+tick: 140
+  setblock 24 4 32 grass 1 replace
+setblock 23 4 32 unpowered_repeater 1 replace
+tick: 141
+  setblock 26 4 32 noteblock 0 destroy {note:10}
+setblock 25 4 32 unpowered_repeater 1 replace
+tick: 142
+  setblock 28 4 32 noteblock 0 destroy {note:8}
+setblock 27 4 32 unpowered_repeater 1 replace
+tick: 143
+  setblock 30 4 32 grass 1 replace
+setblock 29 4 32 unpowered_repeater 1 replace
+tick: 144
+  setblock 30 4 36 noteblock 0 destroy {note:12}
+setblock 31 4 36 unpowered_repeater 3 replace
+setblock 31 4 32 redstone_wire 1 replace
+setblock 32 4 32 redstone_wire 0 replace
+setblock 32 4 33 redstone_wire 0 replace
+setblock 32 4 34 redstone_wire 0 replace
+setblock 32 4 35 redstone_wire 0 replace
+setblock 32 4 36 redstone_wire 0 replace
+tick: 145
+  setblock 28 4 36 grass 1 replace
+setblock 29 4 36 unpowered_repeater 3 replace
+tick: 146
+  setblock 26 4 36 grass 1 replace
+setblock 27 4 36 unpowered_repeater 3 replace
+tick: 147
+  setblock 24 4 36 noteblock 0 destroy {note:15}
+setblock 25 4 36 unpowered_repeater 3 replace
+tick: 148
+  setblock 22 4 36 grass 1 replace
+setblock 23 4 36 unpowered_repeater 3 replace
+tick: 149
+  setblock 20 4 36 grass 1 replace
+setblock 21 4 36 unpowered_repeater 3 replace
+tick: 150
+  setblock 18 4 36 noteblock 0 destroy {note:17}
+setblock 19 4 36 unpowered_repeater 3 replace
+tick: 151
+  setblock 16 4 36 noteblock 0 destroy {note:12}
+setblock 17 4 36 unpowered_repeater 3 replace
+tick: 152
+  setblock 14 4 36 grass 1 replace
+setblock 15 4 36 unpowered_repeater 3 replace
+tick: 153
+  setblock 12 4 36 noteblock 0 destroy {note:15}
+setblock 13 4 36 unpowered_repeater 3 replace
+tick: 154
+  setblock 10 4 36 noteblock 0 destroy {note:10}
+setblock 11 4 36 unpowered_repeater 3 replace
+tick: 155
+  setblock 8 4 36 grass 1 replace
+setblock 9 4 36 unpowered_repeater 3 replace
+tick: 156
+  setblock 6 4 36 noteblock 0 destroy {note:12}
+setblock 7 4 36 unpowered_repeater 3 replace
+tick: 157
+  setblock 4 4 36 noteblock 0 destroy {note:8}
+setblock 5 4 36 unpowered_repeater 3 replace
+tick: 158
+  setblock 2 4 36 grass 1 replace
+setblock 3 4 36 unpowered_repeater 3 replace
+tick: 159
+  setblock 0 4 36 noteblock 0 destroy {note:11}
+setblock 1 4 36 unpowered_repeater 3 replace
+tick: 160
+  setblock 0 4 40 noteblock 0 destroy {note:12}
+setblock -1 4 40 unpowered_repeater 1 replace
+setblock -1 4 36 redstone_wire 3 replace
+setblock -2 4 36 redstone_wire 0 replace
+setblock -2 4 37 redstone_wire 0 replace
+setblock -2 4 38 redstone_wire 0 replace
+setblock -2 4 39 redstone_wire 0 replace
+setblock -2 4 40 redstone_wire 0 replace
+tick: 161
+  setblock 2 4 40 grass 1 replace
+setblock 1 4 40 unpowered_repeater 1 replace
+tick: 162
+  setblock 4 4 40 noteblock 0 destroy {note:11}
+setblock 3 4 40 unpowered_repeater 1 replace
+tick: 163
+  setblock 6 4 40 noteblock 0 destroy {note:10}
+setblock 5 4 40 unpowered_repeater 1 replace
+tick: 164
+  setblock 8 4 40 grass 1 replace
+setblock 7 4 40 unpowered_repeater 1 replace
+tick: 165
+  setblock 10 4 40 noteblock 0 destroy {note:8}
+setblock 9 4 40 unpowered_repeater 1 replace
+tick: 166
+  setblock 12 4 40 noteblock 0 destroy {note:10}
+setblock 11 4 40 unpowered_repeater 1 replace
+tick: 167
+  setblock 14 4 40 grass 1 replace
+setblock 13 4 40 unpowered_repeater 1 replace
+tick: 168
+  setblock 16 4 40 noteblock 0 destroy {note:11}
+setblock 15 4 40 unpowered_repeater 1 replace
+tick: 169
+  setblock 18 4 40 grass 1 replace
+setblock 17 4 40 unpowered_repeater 1 replace
+tick: 170
+  setblock 20 4 40 grass 1 replace
+setblock 19 4 40 unpowered_repeater 1 replace
+tick: 171
+  setblock 22 4 40 noteblock 0 destroy {note:8}
+setblock 21 4 40 unpowered_repeater 1 replace
+tick: 172
+  setblock 24 4 40 noteblock 0 destroy {note:10}
+setblock 23 4 40 unpowered_repeater 1 replace
+tick: 173
+  setblock 26 4 40 grass 1 replace
+setblock 25 4 40 unpowered_repeater 1 replace
+tick: 174
+  setblock 28 4 40 noteblock 0 destroy {note:12}
+setblock 27 4 40 unpowered_repeater 1 replace
+tick: 175
+  setblock 30 4 40 noteblock 0 destroy {note:15}
+setblock 29 4 40 unpowered_repeater 1 replace
+tick: 176
+  setblock 30 4 44 grass 1 replace
+setblock 31 4 44 unpowered_repeater 3 replace
+setblock 31 4 40 redstone_wire 1 replace
+setblock 32 4 40 redstone_wire 0 replace
+setblock 32 4 41 redstone_wire 0 replace
+setblock 32 4 42 redstone_wire 0 replace
+setblock 32 4 43 redstone_wire 0 replace
+setblock 32 4 44 redstone_wire 0 replace
+tick: 177
+  setblock 28 4 44 noteblock 0 destroy {note:11}
+setblock 29 4 44 unpowered_repeater 3 replace
+tick: 178
+  setblock 26 4 44 noteblock 0 destroy {note:12}
+setblock 27 4 44 unpowered_repeater 3 replace
+tick: 179
+  setblock 24 4 44 grass 1 replace
+setblock 25 4 44 unpowered_repeater 3 replace
+tick: 180
+  setblock 22 4 44 noteblock 0 destroy {note:10}
+setblock 23 4 44 unpowered_repeater 3 replace
+tick: 181
+  setblock 20 4 44 noteblock 0 destroy {note:8}
+setblock 21 4 44 unpowered_repeater 3 replace
+tick: 182
+  setblock 18 4 44 grass 1 replace
+setblock 19 4 44 unpowered_repeater 3 replace
+tick: 183
+  setblock 16 4 44 noteblock 0 destroy {note:10}
+setblock 17 4 44 unpowered_repeater 3 replace
+tick: 184
+  setblock 14 4 44 grass 1 replace
+setblock 15 4 44 unpowered_repeater 3 replace
+tick: 185
+  setblock 12 4 44 grass 1 replace
+setblock 13 4 44 unpowered_repeater 3 replace
+tick: 186
+  setblock 10 4 44 noteblock 0 destroy {note:8}
+setblock 11 4 44 unpowered_repeater 3 replace
+tick: 187
+  setblock 8 4 44 grass 1 replace
+setblock 9 4 44 unpowered_repeater 3 replace
+tick: 188
+  setblock 6 4 44 grass 1 replace
+setblock 7 4 44 unpowered_repeater 3 replace
+tick: 189
+  setblock 4 4 44 noteblock 0 destroy {note:8}
+setblock 5 4 44 unpowered_repeater 3 replace
+tick: 190
+  setblock 2 4 44 grass 1 replace
+setblock 3 4 44 unpowered_repeater 3 replace
+tick: 191
+  setblock 0 4 44 grass 1 replace
+setblock 1 4 44 unpowered_repeater 3 replace
+tick: 192
+  setblock 0 4 48 noteblock 0 destroy {note:8}
+setblock -1 4 48 unpowered_repeater 1 replace
+setblock -1 4 44 redstone_wire 3 replace
+setblock -2 4 44 redstone_wire 0 replace
+setblock -2 4 45 redstone_wire 0 replace
+setblock -2 4 46 redstone_wire 0 replace
+setblock -2 4 47 redstone_wire 0 replace
+setblock -2 4 48 redstone_wire 0 replace
+tick: 193
+  setblock 2 4 48 grass 1 replace
+setblock 1 4 48 unpowered_repeater 1 replace
+tick: 194
+  setblock 4 4 48 grass 1 replace
+setblock 3 4 48 unpowered_repeater 1 replace
+tick: 195
+  setblock 6 4 48 noteblock 0 destroy {note:3}
+setblock 5 4 48 unpowered_repeater 1 replace
+tick: 196
+  setblock 8 4 48 noteblock 0 destroy {note:5}
+setblock 7 4 48 unpowered_repeater 1 replace
+tick: 197
+  setblock 10 4 48 grass 1 replace
+setblock 9 4 48 unpowered_repeater 1 replace
+tick: 198
+  setblock 12 4 48 noteblock 0 destroy {note:8}
+setblock 11 4 48 unpowered_repeater 1 replace
+tick: 199
+  setblock 14 4 48 grass 1 replace
+setblock 13 4 48 unpowered_repeater 1 replace
+tick: 200
+  setblock 16 4 48 grass 1 replace
+setblock 15 4 48 unpowered_repeater 1 replace
+tick: 201
+  setblock 18 4 48 noteblock 0 destroy {note:3}
+setblock 17 4 48 unpowered_repeater 1 replace
+tick: 202
+  setblock 20 4 48 noteblock 0 destroy {note:5}
+setblock 19 4 48 unpowered_repeater 1 replace
+tick: 203
+  setblock 22 4 48 grass 1 replace
+setblock 21 4 48 unpowered_repeater 1 replace
+tick: 204
+  setblock 24 4 48 noteblock 0 destroy {note:8}
+setblock 23 4 48 unpowered_repeater 1 replace
+tick: 205
+  setblock 26 4 48 noteblock 0 destroy {note:10}
+setblock 25 4 48 unpowered_repeater 1 replace
+tick: 206
+  setblock 28 4 48 grass 1 replace
+setblock 27 4 48 unpowered_repeater 1 replace
+tick: 207
+  setblock 30 4 48 noteblock 0 destroy {note:12}
+setblock 29 4 48 unpowered_repeater 1 replace
+tick: 208
+  setblock 30 4 52 noteblock 0 destroy {note:8}
+setblock 31 4 52 unpowered_repeater 3 replace
+setblock 31 4 48 redstone_wire 1 replace
+setblock 32 4 48 redstone_wire 0 replace
+setblock 32 4 49 redstone_wire 0 replace
+setblock 32 4 50 redstone_wire 0 replace
+setblock 32 4 51 redstone_wire 0 replace
+setblock 32 4 52 redstone_wire 0 replace
+tick: 209
+  setblock 28 4 52 grass 1 replace
+setblock 29 4 52 unpowered_repeater 3 replace
+tick: 210
+  setblock 26 4 52 noteblock 0 destroy {note:13}
+setblock 27 4 52 unpowered_repeater 3 replace
+tick: 211
+  setblock 24 4 52 noteblock 0 destroy {note:12}
+setblock 25 4 52 unpowered_repeater 3 replace
+tick: 212
+  setblock 22 4 52 grass 1 replace
+setblock 23 4 52 unpowered_repeater 3 replace
+tick: 213
+  setblock 20 4 52 noteblock 0 destroy {note:13}
+setblock 21 4 52 unpowered_repeater 3 replace
+tick: 214
+  setblock 18 4 52 noteblock 0 destroy {note:15}
+setblock 19 4 52 unpowered_repeater 3 replace
+tick: 215
+  setblock 16 4 52 grass 1 replace
+setblock 17 4 52 unpowered_repeater 3 replace
+tick: 216
+  setblock 14 4 52 noteblock 0 destroy {note:8}
+setblock 15 4 52 unpowered_repeater 3 replace
+tick: 217
+  setblock 12 4 52 grass 1 replace
+setblock 13 4 52 unpowered_repeater 3 replace
+tick: 218
+  setblock 10 4 52 grass 1 replace
+setblock 11 4 52 unpowered_repeater 3 replace
+tick: 219
+  setblock 8 4 52 noteblock 0 destroy {note:8}
+setblock 9 4 52 unpowered_repeater 3 replace
+tick: 220
+  setblock 6 4 52 grass 1 replace
+setblock 7 4 52 unpowered_repeater 3 replace
+tick: 221
+  setblock 4 4 52 grass 1 replace
+setblock 5 4 52 unpowered_repeater 3 replace
+tick: 222
+  setblock 2 4 52 noteblock 0 destroy {note:3}
+setblock 3 4 52 unpowered_repeater 3 replace
+tick: 223
+  setblock 0 4 52 noteblock 0 destroy {note:5}
+setblock 1 4 52 unpowered_repeater 3 replace
+tick: 224
+  setblock 0 4 56 grass 1 replace
+setblock -1 4 56 unpowered_repeater 1 replace
+setblock -1 4 52 redstone_wire 3 replace
+setblock -2 4 52 redstone_wire 0 replace
+setblock -2 4 53 redstone_wire 0 replace
+setblock -2 4 54 redstone_wire 0 replace
+setblock -2 4 55 redstone_wire 0 replace
+setblock -2 4 56 redstone_wire 0 replace
+tick: 225
+  setblock 2 4 56 noteblock 0 destroy {note:8}
+setblock 1 4 56 unpowered_repeater 1 replace
+tick: 226
+  setblock 4 4 56 noteblock 0 destroy {note:3}
+setblock 3 4 56 unpowered_repeater 1 replace
+tick: 227
+  setblock 6 4 56 grass 1 replace
+setblock 5 4 56 unpowered_repeater 1 replace
+tick: 228
+  setblock 8 4 56 noteblock 0 destroy {note:13}
+setblock 7 4 56 unpowered_repeater 1 replace
+tick: 229
+  setblock 10 4 56 noteblock 0 destroy {note:12}
+setblock 9 4 56 unpowered_repeater 1 replace
+tick: 230
+  setblock 12 4 56 grass 1 replace
+setblock 11 4 56 unpowered_repeater 1 replace
+tick: 231
+  setblock 14 4 56 noteblock 0 destroy {note:10}
+setblock 13 4 56 unpowered_repeater 1 replace
+tick: 232
+  setblock 16 4 56 noteblock 0 destroy {note:8}
+setblock 15 4 56 unpowered_repeater 1 replace
+tick: 233
+  setblock 18 4 56 grass 1 replace
+setblock 17 4 56 unpowered_repeater 1 replace
+tick: 234
+  setblock 20 4 56 noteblock 0 destroy {note:1}
+setblock 19 4 56 unpowered_repeater 1 replace
+tick: 235
+  setblock 22 4 56 noteblock 0 destroy {note:0}
+setblock 21 4 56 unpowered_repeater 1 replace
+tick: 236
+  setblock 24 4 56 grass 1 replace
+setblock 23 4 56 unpowered_repeater 1 replace
+tick: 237
+  setblock 26 4 56 noteblock 0 destroy {note:1}
+setblock 25 4 56 unpowered_repeater 1 replace
+tick: 238
+  setblock 28 4 56 noteblock 0 destroy {note:3}
+setblock 27 4 56 unpowered_repeater 1 replace
+tick: 239
+  setblock 30 4 56 grass 1 replace
+setblock 29 4 56 unpowered_repeater 1 replace
+tick: 240
+  setblock 30 4 60 noteblock 0 destroy {note:8}
+setblock 31 4 60 unpowered_repeater 3 replace
+setblock 31 4 56 redstone_wire 1 replace
+setblock 32 4 56 redstone_wire 0 replace
+setblock 32 4 57 redstone_wire 0 replace
+setblock 32 4 58 redstone_wire 0 replace
+setblock 32 4 59 redstone_wire 0 replace
+setblock 32 4 60 redstone_wire 0 replace
+tick: 241
+  setblock 28 4 60 grass 1 replace
+setblock 29 4 60 unpowered_repeater 3 replace
+tick: 242
+  setblock 26 4 60 grass 1 replace
+setblock 27 4 60 unpowered_repeater 3 replace
+tick: 243
+  setblock 24 4 60 noteblock 0 destroy {note:3}
+setblock 25 4 60 unpowered_repeater 3 replace
+tick: 244
+  setblock 22 4 60 noteblock 0 destroy {note:5}
+setblock 23 4 60 unpowered_repeater 3 replace
+tick: 245
+  setblock 20 4 60 grass 1 replace
+setblock 21 4 60 unpowered_repeater 3 replace
+tick: 246
+  setblock 18 4 60 noteblock 0 destroy {note:8}
+setblock 19 4 60 unpowered_repeater 3 replace
+tick: 247
+  setblock 16 4 60 grass 1 replace
+setblock 17 4 60 unpowered_repeater 3 replace
+tick: 248
+  setblock 14 4 60 grass 1 replace
+setblock 15 4 60 unpowered_repeater 3 replace
+tick: 249
+  setblock 12 4 60 noteblock 0 destroy {note:3}
+setblock 13 4 60 unpowered_repeater 3 replace
+tick: 250
+  setblock 10 4 60 noteblock 0 destroy {note:5}
+setblock 11 4 60 unpowered_repeater 3 replace
+tick: 251
+  setblock 8 4 60 grass 1 replace
+setblock 9 4 60 unpowered_repeater 3 replace
+tick: 252
+  setblock 6 4 60 noteblock 0 destroy {note:8}
+setblock 7 4 60 unpowered_repeater 3 replace
+tick: 253
+  setblock 4 4 60 noteblock 0 destroy {note:8}
+setblock 5 4 60 unpowered_repeater 3 replace
+tick: 254
+  setblock 2 4 60 grass 1 replace
+setblock 3 4 60 unpowered_repeater 3 replace
+tick: 255
+  setblock 0 4 60 noteblock 0 destroy {note:10}
+setblock 1 4 60 unpowered_repeater 3 replace
+tick: 256
+  setblock 0 4 64 noteblock 0 destroy {note:12}
+setblock -1 4 64 unpowered_repeater 1 replace
+setblock -1 4 60 redstone_wire 3 replace
+setblock -2 4 60 redstone_wire 0 replace
+setblock -2 4 61 redstone_wire 0 replace
+setblock -2 4 62 redstone_wire 0 replace
+setblock -2 4 63 redstone_wire 0 replace
+setblock -2 4 64 redstone_wire 0 replace
+tick: 257
+  setblock 2 4 64 grass 1 replace
+setblock 1 4 64 unpowered_repeater 1 replace
+tick: 258
+  setblock 4 4 64 noteblock 0 destroy {note:8}
+setblock 3 4 64 unpowered_repeater 1 replace
+tick: 259
+  setblock 6 4 64 noteblock 0 destroy {note:3}
+setblock 5 4 64 unpowered_repeater 1 replace
+tick: 260
+  setblock 8 4 64 grass 1 replace
+setblock 7 4 64 unpowered_repeater 1 replace
+tick: 261
+  setblock 10 4 64 noteblock 0 destroy {note:5}
+setblock 9 4 64 unpowered_repeater 1 replace
+tick: 262
+  setblock 12 4 64 noteblock 0 destroy {note:3}
+setblock 11 4 64 unpowered_repeater 1 replace
+tick: 263
+  setblock 14 4 64 grass 1 replace
+setblock 13 4 64 unpowered_repeater 1 replace
+tick: 264
+  setblock 16 4 64 noteblock 0 destroy {note:8}
+setblock 15 4 64 unpowered_repeater 1 replace
+tick: 265
+  setblock 18 4 64 grass 1 replace
+setblock 17 4 64 unpowered_repeater 1 replace
+tick: 266
+  setblock 20 4 64 grass 1 replace
+setblock 19 4 64 unpowered_repeater 1 replace
+tick: 267
+  setblock 22 4 64 noteblock 0 destroy {note:8}
+setblock 21 4 64 unpowered_repeater 1 replace
+tick: 268
+  setblock 24 4 64 noteblock 0 destroy {note:7}
+setblock 23 4 64 unpowered_repeater 1 replace
+tick: 269
+  setblock 26 4 64 grass 1 replace
+setblock 25 4 64 unpowered_repeater 1 replace
+tick: 270
+  setblock 28 4 64 noteblock 0 destroy {note:8}
+setblock 27 4 64 unpowered_repeater 1 replace
+tick: 271
+  setblock 30 4 64 noteblock 0 destroy {note:3}
+setblock 29 4 64 unpowered_repeater 1 replace
+tick: 272
+  setblock 30 4 68 grass 1 replace
+setblock 31 4 68 unpowered_repeater 3 replace
+setblock 31 4 64 redstone_wire 1 replace
+setblock 32 4 64 redstone_wire 0 replace
+setblock 32 4 65 redstone_wire 0 replace
+setblock 32 4 66 redstone_wire 0 replace
+setblock 32 4 67 redstone_wire 0 replace
+setblock 32 4 68 redstone_wire 0 replace
+tick: 273
+  setblock 28 4 68 noteblock 0 destroy {note:5}
+setblock 29 4 68 unpowered_repeater 3 replace
+tick: 274
+  setblock 26 4 68 noteblock 0 destroy {note:8}
+setblock 27 4 68 unpowered_repeater 3 replace
+tick: 275
+  setblock 24 4 68 grass 1 replace
+setblock 25 4 68 unpowered_repeater 3 replace
+tick: 276
+  setblock 22 4 68 noteblock 0 destroy {note:13}
+setblock 23 4 68 unpowered_repeater 3 replace
+tick: 277
+  setblock 20 4 68 noteblock 0 destroy {note:12}
+setblock 21 4 68 unpowered_repeater 3 replace
+tick: 278
+  setblock 18 4 68 grass 1 replace
+setblock 19 4 68 unpowered_repeater 3 replace
+tick: 279
+  setblock 16 4 68 noteblock 0 destroy {note:13}
+setblock 17 4 68 unpowered_repeater 3 replace
+tick: 280
+  setblock 14 4 68 noteblock 0 destroy {note:15}
+setblock 15 4 68 unpowered_repeater 3 replace
+tick: 281
+  setblock 12 4 68 grass 1 replace
+setblock 13 4 68 unpowered_repeater 3 replace
+tick: 282
+  setblock 10 4 68 noteblock 0 destroy {note:8}
+setblock 11 4 68 unpowered_repeater 3 replace
+tick: 283
+  setblock 8 4 68 grass 1 replace
+setblock 9 4 68 unpowered_repeater 3 replace
+tick: 284
+  setblock 6 4 68 grass 1 replace
+setblock 7 4 68 unpowered_repeater 3 replace
+tick: 285
+  setblock 4 4 68 noteblock 0 destroy {note:7}
+setblock 5 4 68 unpowered_repeater 3 replace
+tick: 286
+  setblock 2 4 68 grass 1 replace
+setblock 3 4 68 unpowered_repeater 3 replace
+tick: 287
+  setblock 0 4 68 grass 1 replace
+setblock 1 4 68 unpowered_repeater 3 replace
+tick: 288
+  setblock 0 4 72 noteblock 0 destroy {note:8}
+setblock -1 4 72 unpowered_repeater 1 replace
+setblock -1 4 68 redstone_wire 3 replace
+setblock -2 4 68 redstone_wire 0 replace
+setblock -2 4 69 redstone_wire 0 replace
+setblock -2 4 70 redstone_wire 0 replace
+setblock -2 4 71 redstone_wire 0 replace
+setblock -2 4 72 redstone_wire 0 replace
+tick: 289
+  setblock 2 4 72 grass 1 replace
+setblock 1 4 72 unpowered_repeater 1 replace
+tick: 290
+  setblock 4 4 72 grass 1 replace
+setblock 3 4 72 unpowered_repeater 1 replace
+tick: 291
+  setblock 6 4 72 noteblock 0 destroy {note:3}
+setblock 5 4 72 unpowered_repeater 1 replace
+tick: 292
+  setblock 8 4 72 noteblock 0 destroy {note:5}
+setblock 7 4 72 unpowered_repeater 1 replace
+tick: 293
+  setblock 10 4 72 grass 1 replace
+setblock 9 4 72 unpowered_repeater 1 replace
+tick: 294
+  setblock 12 4 72 noteblock 0 destroy {note:8}
+setblock 11 4 72 unpowered_repeater 1 replace
+tick: 295
+  setblock 14 4 72 grass 1 replace
+setblock 13 4 72 unpowered_repeater 1 replace
+tick: 296
+  setblock 16 4 72 grass 1 replace
+setblock 15 4 72 unpowered_repeater 1 replace
+tick: 297
+  setblock 18 4 72 noteblock 0 destroy {note:3}
+setblock 17 4 72 unpowered_repeater 1 replace
+tick: 298
+  setblock 20 4 72 noteblock 0 destroy {note:5}
+setblock 19 4 72 unpowered_repeater 1 replace
+tick: 299
+  setblock 22 4 72 grass 1 replace
+setblock 21 4 72 unpowered_repeater 1 replace
+tick: 300
+  setblock 24 4 72 noteblock 0 destroy {note:8}
+setblock 23 4 72 unpowered_repeater 1 replace
+tick: 301
+  setblock 26 4 72 noteblock 0 destroy {note:10}
+setblock 25 4 72 unpowered_repeater 1 replace
+tick: 302
+  setblock 28 4 72 grass 1 replace
+setblock 27 4 72 unpowered_repeater 1 replace
+tick: 303
+  setblock 30 4 72 noteblock 0 destroy {note:12}
+setblock 29 4 72 unpowered_repeater 1 replace
+tick: 304
+  setblock 30 4 76 noteblock 0 destroy {note:8}
+setblock 31 4 76 unpowered_repeater 3 replace
+setblock 31 4 72 redstone_wire 1 replace
+setblock 32 4 72 redstone_wire 0 replace
+setblock 32 4 73 redstone_wire 0 replace
+setblock 32 4 74 redstone_wire 0 replace
+setblock 32 4 75 redstone_wire 0 replace
+setblock 32 4 76 redstone_wire 0 replace
+tick: 305
+  setblock 28 4 76 grass 1 replace
+setblock 29 4 76 unpowered_repeater 3 replace
+tick: 306
+  setblock 26 4 76 noteblock 0 destroy {note:13}
+setblock 27 4 76 unpowered_repeater 3 replace
+tick: 307
+  setblock 24 4 76 noteblock 0 destroy {note:12}
+setblock 25 4 76 unpowered_repeater 3 replace
+tick: 308
+  setblock 22 4 76 grass 1 replace
+setblock 23 4 76 unpowered_repeater 3 replace
+tick: 309
+  setblock 20 4 76 noteblock 0 destroy {note:13}
+setblock 21 4 76 unpowered_repeater 3 replace
+tick: 310
+  setblock 18 4 76 noteblock 0 destroy {note:15}
+setblock 19 4 76 unpowered_repeater 3 replace
+tick: 311
+  setblock 16 4 76 grass 1 replace
+setblock 17 4 76 unpowered_repeater 3 replace
+tick: 312
+  setblock 14 4 76 noteblock 0 destroy {note:8}
+setblock 15 4 76 unpowered_repeater 3 replace
+tick: 313
+  setblock 12 4 76 grass 1 replace
+setblock 13 4 76 unpowered_repeater 3 replace
+tick: 314
+  setblock 10 4 76 grass 1 replace
+setblock 11 4 76 unpowered_repeater 3 replace
+tick: 315
+  setblock 8 4 76 noteblock 0 destroy {note:8}
+setblock 9 4 76 unpowered_repeater 3 replace
+tick: 316
+  setblock 6 4 76 grass 1 replace
+setblock 7 4 76 unpowered_repeater 3 replace
+tick: 317
+  setblock 4 4 76 grass 1 replace
+setblock 5 4 76 unpowered_repeater 3 replace
+tick: 318
+  setblock 2 4 76 noteblock 0 destroy {note:3}
+setblock 3 4 76 unpowered_repeater 3 replace
+tick: 319
+  setblock 0 4 76 noteblock 0 destroy {note:5}
+setblock 1 4 76 unpowered_repeater 3 replace
+tick: 320
+  setblock 0 4 80 grass 1 replace
+setblock -1 4 80 unpowered_repeater 1 replace
+setblock -1 4 76 redstone_wire 3 replace
+setblock -2 4 76 redstone_wire 0 replace
+setblock -2 4 77 redstone_wire 0 replace
+setblock -2 4 78 redstone_wire 0 replace
+setblock -2 4 79 redstone_wire 0 replace
+setblock -2 4 80 redstone_wire 0 replace
+tick: 321
+  setblock 2 4 80 noteblock 0 destroy {note:8}
+setblock 1 4 80 unpowered_repeater 1 replace
+tick: 322
+  setblock 4 4 80 noteblock 0 destroy {note:3}
+setblock 3 4 80 unpowered_repeater 1 replace
+tick: 323
+  setblock 6 4 80 grass 1 replace
+setblock 5 4 80 unpowered_repeater 1 replace
+tick: 324
+  setblock 8 4 80 noteblock 0 destroy {note:13}
+setblock 7 4 80 unpowered_repeater 1 replace
+tick: 325
+  setblock 10 4 80 noteblock 0 destroy {note:12}
+setblock 9 4 80 unpowered_repeater 1 replace
+tick: 326
+  setblock 12 4 80 grass 1 replace
+setblock 11 4 80 unpowered_repeater 1 replace
+tick: 327
+  setblock 14 4 80 noteblock 0 destroy {note:10}
+setblock 13 4 80 unpowered_repeater 1 replace
+tick: 328
+  setblock 16 4 80 noteblock 0 destroy {note:8}
+setblock 15 4 80 unpowered_repeater 1 replace
+tick: 329
+  setblock 18 4 80 grass 1 replace
+setblock 17 4 80 unpowered_repeater 1 replace
+tick: 330
+  setblock 20 4 80 noteblock 0 destroy {note:1}
+setblock 19 4 80 unpowered_repeater 1 replace
+tick: 331
+  setblock 22 4 80 noteblock 0 destroy {note:0}
+setblock 21 4 80 unpowered_repeater 1 replace
+tick: 332
+  setblock 24 4 80 grass 1 replace
+setblock 23 4 80 unpowered_repeater 1 replace
+tick: 333
+  setblock 26 4 80 noteblock 0 destroy {note:1}
+setblock 25 4 80 unpowered_repeater 1 replace
+tick: 334
+  setblock 28 4 80 noteblock 0 destroy {note:3}
+setblock 27 4 80 unpowered_repeater 1 replace
+tick: 335
+  setblock 30 4 80 grass 1 replace
+setblock 29 4 80 unpowered_repeater 1 replace
+tick: 336
+  setblock 30 4 84 noteblock 0 destroy {note:8}
+setblock 31 4 84 unpowered_repeater 3 replace
+setblock 31 4 80 redstone_wire 1 replace
+setblock 32 4 80 redstone_wire 0 replace
+setblock 32 4 81 redstone_wire 0 replace
+setblock 32 4 82 redstone_wire 0 replace
+setblock 32 4 83 redstone_wire 0 replace
+setblock 32 4 84 redstone_wire 0 replace
+tick: 337
+  setblock 28 4 84 grass 1 replace
+setblock 29 4 84 unpowered_repeater 3 replace
+tick: 338
+  setblock 26 4 84 grass 1 replace
+setblock 27 4 84 unpowered_repeater 3 replace
+tick: 339
+  setblock 24 4 84 noteblock 0 destroy {note:3}
+setblock 25 4 84 unpowered_repeater 3 replace
+tick: 340
+  setblock 22 4 84 noteblock 0 destroy {note:5}
+setblock 23 4 84 unpowered_repeater 3 replace
+tick: 341
+  setblock 20 4 84 grass 1 replace
+setblock 21 4 84 unpowered_repeater 3 replace
+tick: 342
+  setblock 18 4 84 noteblock 0 destroy {note:8}
+setblock 19 4 84 unpowered_repeater 3 replace
+tick: 343
+  setblock 16 4 84 grass 1 replace
+setblock 17 4 84 unpowered_repeater 3 replace
+tick: 344
+  setblock 14 4 84 grass 1 replace
+setblock 15 4 84 unpowered_repeater 3 replace
+tick: 345
+  setblock 12 4 84 noteblock 0 destroy {note:3}
+setblock 13 4 84 unpowered_repeater 3 replace
+tick: 346
+  setblock 10 4 84 noteblock 0 destroy {note:5}
+setblock 11 4 84 unpowered_repeater 3 replace
+tick: 347
+  setblock 8 4 84 grass 1 replace
+setblock 9 4 84 unpowered_repeater 3 replace
+tick: 348
+  setblock 6 4 84 noteblock 0 destroy {note:8}
+setblock 7 4 84 unpowered_repeater 3 replace
+tick: 349
+  setblock 4 4 84 noteblock 0 destroy {note:8}
+setblock 5 4 84 unpowered_repeater 3 replace
+tick: 350
+  setblock 2 4 84 grass 1 replace
+setblock 3 4 84 unpowered_repeater 3 replace
+tick: 351
+  setblock 0 4 84 noteblock 0 destroy {note:10}
+setblock 1 4 84 unpowered_repeater 3 replace
+tick: 352
+  setblock 0 4 88 noteblock 0 destroy {note:12}
+setblock -1 4 88 unpowered_repeater 1 replace
+setblock -1 4 84 redstone_wire 3 replace
+setblock -2 4 84 redstone_wire 0 replace
+setblock -2 4 85 redstone_wire 0 replace
+setblock -2 4 86 redstone_wire 0 replace
+setblock -2 4 87 redstone_wire 0 replace
+setblock -2 4 88 redstone_wire 0 replace
+tick: 353
+  setblock 2 4 88 grass 1 replace
+setblock 1 4 88 unpowered_repeater 1 replace
+tick: 354
+  setblock 4 4 88 noteblock 0 destroy {note:8}
+setblock 3 4 88 unpowered_repeater 1 replace
+tick: 355
+  setblock 6 4 88 noteblock 0 destroy {note:3}
+setblock 5 4 88 unpowered_repeater 1 replace
+tick: 356
+  setblock 8 4 88 grass 1 replace
+setblock 7 4 88 unpowered_repeater 1 replace
+tick: 357
+  setblock 10 4 88 noteblock 0 destroy {note:5}
+setblock 9 4 88 unpowered_repeater 1 replace
+tick: 358
+  setblock 12 4 88 noteblock 0 destroy {note:3}
+setblock 11 4 88 unpowered_repeater 1 replace
+tick: 359
+  setblock 14 4 88 grass 1 replace
+setblock 13 4 88 unpowered_repeater 1 replace
+tick: 360
+  setblock 16 4 88 noteblock 0 destroy {note:8}
+setblock 15 4 88 unpowered_repeater 1 replace
+tick: 361
+  setblock 18 4 88 grass 1 replace
+setblock 17 4 88 unpowered_repeater 1 replace
+tick: 362
+  setblock 20 4 88 grass 1 replace
+setblock 19 4 88 unpowered_repeater 1 replace
+tick: 363
+  setblock 22 4 88 noteblock 0 destroy {note:8}
+setblock 21 4 88 unpowered_repeater 1 replace
+tick: 364
+  setblock 24 4 88 noteblock 0 destroy {note:7}
+setblock 23 4 88 unpowered_repeater 1 replace
+tick: 365
+  setblock 26 4 88 grass 1 replace
+setblock 25 4 88 unpowered_repeater 1 replace
+tick: 366
+  setblock 28 4 88 noteblock 0 destroy {note:8}
+setblock 27 4 88 unpowered_repeater 1 replace
+tick: 367
+  setblock 30 4 88 noteblock 0 destroy {note:3}
+setblock 29 4 88 unpowered_repeater 1 replace
+tick: 368
+  setblock 30 4 92 grass 1 replace
+setblock 31 4 92 unpowered_repeater 3 replace
+setblock 31 4 88 redstone_wire 1 replace
+setblock 32 4 88 redstone_wire 0 replace
+setblock 32 4 89 redstone_wire 0 replace
+setblock 32 4 90 redstone_wire 0 replace
+setblock 32 4 91 redstone_wire 0 replace
+setblock 32 4 92 redstone_wire 0 replace
+tick: 369
+  setblock 28 4 92 noteblock 0 destroy {note:5}
+setblock 29 4 92 unpowered_repeater 3 replace
+tick: 370
+  setblock 26 4 92 noteblock 0 destroy {note:8}
+setblock 27 4 92 unpowered_repeater 3 replace
+tick: 371
+  setblock 24 4 92 grass 1 replace
+setblock 25 4 92 unpowered_repeater 3 replace
+tick: 372
+  setblock 22 4 92 noteblock 0 destroy {note:13}
+setblock 23 4 92 unpowered_repeater 3 replace
+tick: 373
+  setblock 20 4 92 noteblock 0 destroy {note:12}
+setblock 21 4 92 unpowered_repeater 3 replace
+tick: 374
+  setblock 18 4 92 grass 1 replace
+setblock 19 4 92 unpowered_repeater 3 replace
+tick: 375
+  setblock 16 4 92 noteblock 0 destroy {note:13}
+setblock 17 4 92 unpowered_repeater 3 replace
+tick: 376
+  setblock 14 4 92 noteblock 0 destroy {note:15}
+setblock 15 4 92 unpowered_repeater 3 replace
+tick: 377
+  setblock 12 4 92 grass 1 replace
+setblock 13 4 92 unpowered_repeater 3 replace
+tick: 378
+  setblock 10 4 92 noteblock 0 destroy {note:8}
+setblock 11 4 92 unpowered_repeater 3 replace
+tick: 379
+  setblock 8 4 92 grass 1 replace
+setblock 9 4 92 unpowered_repeater 3 replace
+tick: 380
+  setblock 6 4 92 grass 1 replace
+setblock 7 4 92 unpowered_repeater 3 replace
+tick: 381
+  setblock 4 4 92 noteblock 0 destroy {note:10}
+setblock 5 4 92 unpowered_repeater 3 replace
