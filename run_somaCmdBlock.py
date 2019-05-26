@@ -6,12 +6,12 @@ import random
 
 # 在这里设置传入的mid路径
 # midifile = r'C:\Users\dell\Desktop\膝盖\金蛇狂舞（双钢琴版）.mid'
-midifile = r'./mid/金蛇狂舞（双钢琴版）.mid'
+midifile = r'./mid/鸟之诗A.mid'
 tickRate = 40.0
 loopCmd  = ''
 lineWidth= 2
-lineLen  = 32
-buildSpeed = 10
+lineLen  = 48
+buildSpeed = 16
 onlyProgram= 1
 # loopCmd  = 'tp @a ~0.25 ~ ~'
 
@@ -43,7 +43,7 @@ def setCmdBlocksByPos(x,y,z,cmds):
   return '\n'.join( res )
 
 def setCmdBlocksByTick(tick, cmds):
-  _x,_y,_z = 0,64,0
+  _x,_y,_z = 0,32,0
 
   _length = lineLen
   _width  = lineWidth
@@ -123,6 +123,7 @@ if __name__ == '__main__':
           BuildList[rsTick].append(Soma.toPlaySoundCmd(note, program, velocity))
         else:
           BuildList[rsTick].append(Soma.toPlaySoundCmd(note, program, velocity))
+
 
         lastRsTick = rsTick
 
