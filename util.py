@@ -27,9 +27,9 @@ class Summon:
     return f'summon {self.entity} {self.x} {self.y} {self.z} {_tag}'
 
 class TellRawNode:
-  def __init__(self, text, color='white', bold=False):
+  def __init__(self, text, color='white', bold=False, fixChar=True):
     self.data = {
-      "text" : text,
+      "text" : text.replace('"','\\"').replace('\\','\\\\') if fixChar else text,
       "color": color,
       "bold" : bold
     }

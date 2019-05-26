@@ -36,6 +36,20 @@ class NoteBlock:
       print(f'Out of range in NB toNoteBlockCmd: {note}')
       return ''
 
+class Soma:
+  def __init__(self):
+    pass
+  def toPlaySoundCmd(self, note, program, velocity):
+    # execute @p ~ ~ ~ playsound 乐器编号.音高 通道 @p ~ ~ ~ 音量
+    # program is useless now
+    # print(f'execute @p ~ ~ ~ playsound {program}.{note} voice @p ~ ~ ~ {velocity/128}')
+    program = 1
+    return f'execute @p ~ ~ ~ playsound {program}.{note} voice @p ~ ~ ~ {velocity/128}'
+  def toCmdBlockCmd(self, note, program, velocity, x,y,z):
+    cmd = self.toPlaySoundCmd(note, program, velocity)
+    cmd = cmd.replace('"', '\\"').replace('\\', '\\\\')
+    return f'setblock {x} {y} {z} command_block 0 replace {{Command:"{cmd}",TrackOutput:0,auto:0}}'
+
 
 if __name__ == '__main__':
   NB = NoteBlock()

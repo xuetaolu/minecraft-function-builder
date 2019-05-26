@@ -10,7 +10,9 @@ class SeqItem:
     self.cmds=[]
 
   def addCmd(self, cmd):
-    self.cmds.append(cmd)
+    for c in cmd.split('\n'):
+      if len(c) > 0:
+        self.cmds.append(c)
 
 class Seq:
   def __init__(self):
