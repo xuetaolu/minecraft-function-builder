@@ -15,7 +15,7 @@ buildSpeed = 16
 buildSpaceCfg = {
   'x' : 1,     
   'y' : 4,
-  'z' : 1+64,
+  'z' : 1+32,
   'dx': 30,
   'dy': 128,
   'dz': 30,
