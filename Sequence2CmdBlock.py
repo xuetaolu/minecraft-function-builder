@@ -133,7 +133,7 @@ class Sequence2CmdBlock:
 
       curRes = []
       for j in range(len(cmds)):
-        cmd,pos,data = cmds[j], posList[j].pos, posList[j].data
+        cmd,pos,data = cmds[j].replace('"', '\\"'), posList[j].pos, posList[j].data
         x, y, z      = pos
         block        = 'command_block' if j == 0 else 'chain_command_block'
         auto         =              0  if j == 0 else  1      

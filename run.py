@@ -6,8 +6,8 @@ import random
 
 # 在这里设置传入的mid路径
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
-midifile = r'./mid/S1.mid'
-tickRate = 60.0
+midifile = r'./mid/test.mid'
+tickRate = 20.0
 
 
 # 常用指令暴露出来
@@ -138,4 +138,4 @@ if __name__ == '__main__':
 
 
 
-  seq.makeCmd(log=True, loopCmd='tp xue ~0.25 ~ ~')
+  seq.makeCmd(log=True, loopCmd='')

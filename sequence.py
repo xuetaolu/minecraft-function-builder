@@ -9,32 +9,56 @@ class SeqItem:
     self.tick=tick
     self.cmds=[]
 
-  def addCmd(self, cmd):
+  def addCmd(self, cmd, filter=None):
     for c in cmd.split('\n'):
       if len(c) > 0:
-        self.cmds.append(c)
+        if filter != None:
+          self.cmds.append( filter(c) )
+        else:
+          self.cmds.append(c)
 
 class Seq:
   def __init__(self):
-    self.seq = []
+    self._seqDict = {}
+
+  def __iter__(self):
+    tmpList = [item for k,item in self._seqDict.items()]
+    tmpList.sort(key=lambda item: item.tick)
+    fix     = -tmpList[0].tick
+    for item in tmpList:
+      item.tick += fix
+      yield item
+
+  def yieldAllTick(self, minI, maxI, loopCmd=''):
+  # minI = min([ k for k in self._seqDict ])
+  # maxI = max([ k for k in self._seqDict ])
+    for tick in range(minI, maxI):
+      res = None
+      if tick in self._seqDict:
+        res = self._seqDict[tick].cmds + [loopCmd]
+      else:
+        res = []
+      if len(loopCmd) > 0:
+        yield res + [loopCmd]
+      else:
+        yield res
 
   def findByTick(self, tick):
-    for item in self.seq:
-      if item.tick == tick:
-        return item
+    if tick in self._seqDict:
+      return self._seqDict[tick]
     # 查无此项
     newSeqItem = SeqItem(tick)
-    self.seq.append(newSeqItem)
+    self._seqDict[tick] = newSeqItem
     return newSeqItem
 
   def insert(self, tick, cmd):
     self.findByTick(tick).addCmd(cmd)
 
-  def fixSeq(self):
-    self.seq.sort(key=lambda item: item.tick)
-    fix = -self.seq[0].tick
-    for item in self.seq:
-      item.tick += fix
+  # def fixSeq(self):
+  #   self._seqDict.sort(key=lambda item: item.tick)
+  #   fix = -self._seqDict[0].tick
+  #   for item in self._seqDict:
+  #     item.tick += fix
 
   def clearCmd(self):
     try:
@@ -50,18 +74,18 @@ class Seq:
     doc.close()
 
   def makeCmd(self, log=False, loopCmd=''):
-    self.fixSeq()
+    # self.fixSeq()
     self.clearCmd()
 
     # 测试
     if log:
       doc = open(f'log.txt', 'w', encoding='utf-8')
-      for item in self.seq:
+      for item in self:
         doc.write(f'tick: {item.tick}' + '\n')
         doc.write('\n'.join(['  ' + s for s in item.cmds]) + '\n')
 
     lastTick = 0
-    for item in self.seq:
+    for item in self:
       currentTick = item.tick
 
       # 填充空帧
@@ -74,6 +98,14 @@ class Seq:
       self.buildCmd(currentTick, cmdStr)
       lastTick = currentTick
     self.buildCmd(lastTick+1, f'\ngamerule gameLoopFunction {outputFolder}:999999')
+
+  def makeCmdToCB(self, seq2cbObj, log=False, buildSpeed=16, loopCmd=''):
+    minI = min([ k for k in self._seqDict ])
+    maxI = max([ k for k in self._seqDict ])
+    newSeq = Seq()
+    for i, cmds in seq2cbObj.getCmdBlockBySequence( self.yieldAllTick(minI, maxI+1, loopCmd), maxI-minI + 1 ):
+      newSeq.findByTick(i//buildSpeed).addCmd(cmds)
+    newSeq.makeCmd(log=log)
 
 if __name__ == '__main__':
   seq = Seq()
