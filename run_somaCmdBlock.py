@@ -85,7 +85,7 @@ def setCmdBlocksByTick(tick, cmds):
 if __name__ == '__main__':
   msgList = noteMsg.MsgList()
   msgList.load(midifile, tickRate)
-  for item in msgList.msgList:
+  for item in msgList:
     tick = item.tick
     rsTick = tick
     for msg in item.msgs.msgs:

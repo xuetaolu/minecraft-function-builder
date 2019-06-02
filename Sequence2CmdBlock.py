@@ -12,16 +12,45 @@ dir_rpos_dic = {}
 for k,v in direction_dic.items():
   dir_rpos_dic[v['rpos']] = v['data']
 
+def getCubePosFunction(x=0,y=4,z=0, dx=32,dy=128,dz=32):
+  S = dx * dz
+  V = dx*dy*dz
+  def posFunction( index ):
+    if 0 <= index < V:
+      h = index // S
+      if h % 2 == 0:
+        w = index % S // dx
+        if w % 2 == 0 :
+          l = index % S % dx
+        else:
+          l = (dx-1) - index % S % dx
+      else:
+        w = (dz-1) - index % S // dx
+        if w % 2 != 0 :
+          l = index % S % dx
+        else:
+          l = (dx-1) - index % S % dx
+
+      pos = ( x+l, y+h, z+w )
+      return pos
+    else:
+      print( f'[Error]: index:{index} large than V:{V}' )
+      exit(-1)
+  
+  return posFunction
+
 class PosParam:
   def __init__(self, pos, data):
     self.pos = pos
     self.data= data
 
 class Sequence2CmdBlock:
-  def __init__(self, func):
+  def __init__(self, func=None):
     self.curPosIndex = 0
     self.posFunction = func
     self.appendCmdNum= 2
+  def setCubePosFunction(self, x=0,y=4,z=0, dx=32,dy=128,dz=32):
+    self.setPosFunction( getCubePosFunction(x,y,z, dx,dy,dz) )
   def setPosFunction(self, func):
     self.posFunction = func
   def calDirection(self, pos1, pos2):
@@ -59,14 +88,15 @@ class Sequence2CmdBlock:
       index += 1
 
     # 最后一个计算方向
-    rpos, data = self.calDirection( posList[-1].pos, self.posFunction( index ) )
-    if data:
-      posList[-1].data = data
-    else:
-      if len(posList) > 1:
-        posList[-1].data = posList[-2].data
+    if N > 0:
+      rpos, data = self.calDirection( posList[-1].pos, self.posFunction( index ) )
+      if data:
+        posList[-1].data = data
       else:
-        posList[-1].data = 0
+        if len(posList) > 1:
+          posList[-1].data = posList[-2].data
+        else:
+          posList[-1].data = 0
 
     self.curPosIndex = index
 

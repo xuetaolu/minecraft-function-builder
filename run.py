@@ -30,7 +30,7 @@ seq = sequence.Seq()
 if __name__ == '__main__':
   msgList = noteMsg.MsgList()
   msgList.load(midifile, tickRate)
-  for item in msgList.msgList:
+  for item in msgList:
     tick = item.tick
     for msg in item.msgs.msgs:
       # 设置乐器

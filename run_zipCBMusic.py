@@ -9,7 +9,7 @@ from collections import defaultdict
 # 在这里设置传入的mid路径
 # midifile = r'E:\Minecraft1.11\.minecraft\saves\DEMO 4-4 Hack - old\data\functions\Toilet Story 4(black remix 262278 notes) .mid'
 midifile = r'C:\Users\dell\Desktop\膝盖\Be the one.mid'
-# midifile = r"./mid/test.mid"
+midifile = r"./mid/S1.mid"
 tickRate = 60.0
 buildSpeed = 16
 buildSpaceCfg = {
@@ -40,8 +40,9 @@ def getPos(tick, note, velocity, channel, xfix=0.25, zfix=1.0, x=0.0, y=0.0, z=0
 
 seq = sequence.Seq()
 
-minI = 0
-maxI = 0
+seq2cb = Sequence2CmdBlock()
+seq2cb.setCubePosFunction(**buildSpaceCfg)
+
 cmdSeq = defaultdict(list)
 def cmdSeqAddCmd( i, cmd ):
   for c in cmd.split('\n'):
@@ -50,14 +51,10 @@ def cmdSeqAddCmd( i, cmd ):
     cmdSeq[i].append( c )
 
 def redstoneMusic():
-  global minI
-  global maxI
   msgList = noteMsg.MsgList()
   msgList.load(midifile, tickRate)
-  for item in msgList.msgList:
+  for item in msgList:
     tick = item.tick
-    minI = min( minI, tick )
-    maxI = max( maxI, tick )
     for msg in item.msgs.msgs:
       # 设置乐器
       if msg.velocity == -2:
@@ -170,73 +167,15 @@ def redstoneMusic():
 
 
 if __name__ == '__main__':
+
   redstoneMusic()
 
-  # minI = 0
-  # maxI = 100
-  # for i in range(minI,maxI+1):
+  # for i in range(0,100):
   #   cmdSeqAddCmd(i, f'say {i/60.0}')
 
-  def getPosFunction(x=0,y=4,z=0, dx=32,dy=128,dz=32):
-    # x,y,z = 0,4,0
-    # dx,dy,dz = 32,128,32
-    S = dx * dz
-    V = dx*dy*dz
-    def posFunction( index ):
-      if 0 <= index < V:
-        h = index // S
-        if h % 2 == 0:
-          w = index % S // dx
-          if w % 2 == 0 :
-            l = index % S % dx
-          else:
-            l = (dx-1) - index % S % dx
-        else:
-          w = (dz-1) - index % S // dx
-          if w % 2 != 0 :
-            l = index % S % dx
-          else:
-            l = (dx-1) - index % S % dx
-
-        pos = ( x+l, y+h, z+w )
-        # print( index, pos, S,V )
-        return pos
-      else:
-        print( f'[Error]: index:{index} large than V:{V}' )
-        exit(-1)
-    
-    return posFunction
-
-
-  seq2cb = Sequence2CmdBlock(getPosFunction(**buildSpaceCfg))
-  # testPos= ( (0, 0, 0), (1, 0, 0), (2, 0, 0), (4, 0, 0) )
-  # for i in range(0, len(testPos)-1):
-  #   p1,p2 = testPos[i], testPos[i+1]
-  #   print( seq2cb.calDirection(p1,p2) )
-
-
-  testCmds    = [ [] for i in range(5) ]
-  testCmds[0] = [f'say 0.{i}' for i in range(1)]
-  testCmds[1] = [f'say 1.{i}' for i in range(4)]
-  testCmds[2] = [f'say 2.{i}' for i in range(2)]
-  testCmds[3] = [f'say 3.{i}' for i in range(0)] # 空
-  testCmds[4] = [f'say 4.{i}' for i in range(2)]
-
+  minI = min([ k for k,v in cmdSeq.items() ])
+  maxI = max([ k for k,v in cmdSeq.items() ])
   for i, cmds in seq2cb.getCmdBlockBySequence( ( cmdSeq[i] for i in range( minI, maxI + 1) ), maxI-minI + 1 ):
     seq.findByTick(i//buildSpeed).addCmd(cmds)
-
-
-  # center = (0, 5, 0)
-  # for k,v in direction_dic.items():
-  #   pos = np.array(center) + np.array(v['rpos'])
-  #   x,y,z = pos.tolist()
-  #   data  = v['data']
-  #   bCmd  = f'say {data}'
-  #   cmd = f'setblock {x} {y} {z} command_block {data} destroy {{Command:"{bCmd}"}}'
-
-  #   print(cmd)
-
-  #   seq.findByTick(0).addCmd( cmd )
-
 
   seq.makeCmd(log=True)

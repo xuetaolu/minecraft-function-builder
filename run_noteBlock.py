@@ -84,7 +84,7 @@ BuildList = {}
 if __name__ == '__main__':
   msgList = noteMsg.MsgList()
   msgList.load(midifile, tickRate)
-  for item in msgList.msgList:
+  for item in msgList:
     tick = item.tick
     rsTick = int(tick/2)
     for msg in item.msgs.msgs:

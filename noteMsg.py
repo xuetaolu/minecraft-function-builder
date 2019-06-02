@@ -34,17 +34,21 @@ class MsgListItem:
 
 class MsgList:
   def __init__(self):
-    # 最终要保存的信息表 msgList
-    self.msgList = []
+    # 最终要保存的信息表 _msgDict
+    self._msgDict = {}
+  def __iter__(self):
+    tmpList = [item for k,item in self._msgDict.items()]
+    tmpList.sort(key=lambda item: item.tick)
+    for item in tmpList:
+      yield item
 
   def findByTick(self, tick):
-    for item in self.msgList:
-      if item.tick == tick:
-        return item
+    if tick in self._msgDict:
+        return self._msgDict[tick]
     # 查无此项
     newItem = MsgListItem()
     newItem.tick = tick
-    self.msgList.append(newItem)
+    self._msgDict[tick]=newItem
     return newItem
 
   def fixForShortNote(self, item):
@@ -71,12 +75,12 @@ class MsgList:
       if msg != newMsg and msg.velocity == -1 and msg.channel == newMsg.channel:
         item.msgs.msgs.remove(msg)
 
-  def sortByTick(self):
-    self.msgList.sort(key=lambda item: item.tick)
+  # def sortByTick(self):
+  #   self._msgDict.sort(key=lambda item: item.tick)
 
   def makeLength(self):
     noteMsgMarker = [[None for note in range(0,128+1)] for channel in range(0,15+1)]
-    for item in self.msgList:
+    for item in self:
       for msg in item.msgs.msgs:
         n = msg.note
         c = msg.channel
@@ -90,7 +94,7 @@ class MsgList:
 
   def makePitch(self):
     noteMsgMarker = [[None for note in range(0,128+1)] for channel in range(0,15+1)]
-    for item in self.msgList:
+    for item in self:
       for msg in item.msgs.msgs:
         n = msg.note
         c = msg.channel
@@ -216,7 +220,7 @@ class MsgList:
         if msg.time > 0:
           currentTime += msg.time
 
-    self.sortByTick()
+    # self.sortByTick()
 
     if makeLength:
       self.makeLength()
@@ -226,9 +230,9 @@ class MsgList:
 
 
 if __name__ == '__main__':
-  msgList = MsgList()
-  msgList.load(f'./mid/test.mid', 100.0 / 5, makeLength=True)
-  for item in msgList.msgList:
+  _msgDict = MsgList()
+  _msgDict.load(f'./mid/test.mid', 100.0 / 5, makeLength=True)
+  for item in _msgDict._msgDict:
     print(f'tick: {item.tick}')
     for msg in item.msgs.msgs:
       if msg.velocity > 0:
