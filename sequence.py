@@ -99,13 +99,15 @@ class Seq:
       lastTick = currentTick
     self.buildCmd(lastTick+1, f'\ngamerule gameLoopFunction {outputFolder}:999999')
 
-  def makeCmdToCB(self, seq2cbObj, log=False, buildSpeed=16, loopCmd=''):
+  def makeCmdToCB(self, seq2cbObj, log=False, buildSpeed=16, loopCmd='', autoMake=True):
     minI = min([ k for k in self._seqDict ])
     maxI = max([ k for k in self._seqDict ])
     newSeq = Seq()
     for i, cmds in seq2cbObj.getCmdBlockBySequence( self.yieldAllTick(minI, maxI+1, loopCmd), maxI-minI + 1 ):
       newSeq.findByTick(i//buildSpeed).addCmd(cmds)
-    newSeq.makeCmd(log=log)
+    if autoMake:
+      newSeq.makeCmd(log=log)
+    return newSeq
 
 if __name__ == '__main__':
   seq = Seq()

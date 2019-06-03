@@ -32,11 +32,13 @@ def getCubePosFunction(x=0,y=4,z=0, dx=32,dy=128,dz=32):
           l = (dx-1) - index % S % dx
 
       pos = ( x+l, y+h, z+w )
+      print(index)
       return pos
     else:
       print( f'[Error]: index:{index} large than V:{V}' )
       exit(-1)
   
+
   return posFunction
 
 class PosParam:
