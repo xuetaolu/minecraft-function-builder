@@ -83,10 +83,13 @@ def getTByStWithTop(g,f, St, Top, limit=0.5):
     t = 0.5*(t1+t0)
     v0= getV0BySt(g,f, St, t)
     _t, _top = getTopTY(g,f, v0)
-    if _top < Top:
+    if _t < 0:
       t0 = t
     else:
-      t1 = t
+      if _top < Top:
+        t0 = t
+      else:
+        t1 = t
   return 0.5*(t1+t0)
 
 def getDownTBySt(g, f, St, limit=0.5):
